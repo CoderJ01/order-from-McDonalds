@@ -66,6 +66,7 @@ public class Customer {
             this.balance = 0;
         }
         else {
+            // print remaining balance
             System.out.println(this.balance - costOfOrder);
         }
     }
