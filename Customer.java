@@ -23,4 +23,9 @@ public class Customer {
     public double getBalance() {
         return this.balance;
     }
+
+    // add money to bank account
+    public void addMoney(double amount) {
+        this.balance += amount;
+    }
 }
