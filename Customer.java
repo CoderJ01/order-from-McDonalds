@@ -57,6 +57,7 @@ public class Customer {
         return cost;
     }
 
+    // get the customer's remainig balance
     public void purchaseOrder() {
         double costOfOrder = getTotalCost();
         if(this.balance - costOfOrder < 0) {
