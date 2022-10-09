@@ -51,9 +51,7 @@ public class Customer {
         double cost = 0;
         for(int i = 0; i < this.orderedItems.size(); i++) {
             cost += this.orderedItems.get(i).getCost();
-            System.out.println(this.orderedItems.get(i).getCost());
         }
-        System.out.println("Total price: " + cost);
         return cost;
     }
 

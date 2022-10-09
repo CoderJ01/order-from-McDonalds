@@ -14,7 +14,13 @@ public class Main {
         System.out.println("Cost: $" + itemA.getCost());
         System.out.println("Calories: " + itemA.getCalories()); 
 
+        // space 
+        System.out.println(" ");
+
         MenuItem itemB = new MenuItem("Medium Fries", 1.79, 378);
+        System.out.println("Name: " + itemB.getItem());
+        System.out.println("Cost: $" + itemB.getCost());
+        System.out.println("Calories: " + itemB.getCalories()); 
 
         // space 
         System.out.println(" ");
@@ -22,12 +28,12 @@ public class Main {
         // add item
         customerA.addItem(itemA);
         customerA.addItem(itemB);
-
+        
+        customerA.getTotalCost();
+        
         // space 
         System.out.println(" ");
-
-        customerA.getList();
-        customerA.getTotalCost();
+        
         customerA.purchaseOrder();
     }
 }
