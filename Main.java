@@ -18,7 +18,10 @@ public class Main {
         System.out.println("Cost: $" + itemA.getCost());
         System.out.println("Calories: " + itemA.getCalories()); 
 
+        MenuItem itemB = new MenuItem("Medium Fries", 1.79, 378);
+
         // add item
         customerA.addItem(itemA);
+        customerA.addItem(itemB);
     }
 }
