@@ -46,10 +46,14 @@ public class Customer {
         }
     }
 
-    // list the price of each item
-    public void getPriceList() {
+    // get the cost of the entire order
+    public double getTotalCost() {
+        double cost = 0;
         for(int i = 0; i < this.orderedItems.size(); i++) {
+            cost += this.orderedItems.get(i).getCost();
             System.out.println(this.orderedItems.get(i).getCost());
         }
+        System.out.println("Total price: " + cost);
+        return cost;
     }
 }
