@@ -20,6 +20,9 @@ public class Main {
 
         MenuItem itemB = new MenuItem("Medium Fries", 1.79, 378);
 
+        // space 
+        System.out.println(" ");
+
         // add item
         customerA.addItem(itemA);
         customerA.addItem(itemB);
