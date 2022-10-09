@@ -8,5 +8,11 @@ public class Main {
         System.out.println("Balance: $" + customerA.getBalance());
         customerA.addMoney(150);
         System.out.println("Balance: $" + customerA.getBalance());
+
+        // test for menu item
+        MenuItem itemA = new MenuItem("Big Mac", 3.99, 563);
+        System.out.println("Name: " + itemA.getItem());
+        System.out.println("Cost: $" + itemA.getCost());
+        System.out.println("Calories: " + itemA.getCalories()); 
     }
 }
