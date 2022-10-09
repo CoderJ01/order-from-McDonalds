@@ -45,4 +45,11 @@ public class Customer {
             System.out.println(this.orderedItems.get(i).getItem());
         }
     }
+
+    // list the price of each item
+    public void getPriceList() {
+        for(int i = 0; i < this.orderedItems.size(); i++) {
+            System.out.println(this.orderedItems.get(i).getCost());
+        }
+    }
 }
