@@ -38,4 +38,9 @@ public class Customer {
         this.orderedItems.add(item);
         System.out.println(item.getItem() + " has been added to the customer's order list");
     }
+
+    // retrieve all the items that the customer order
+    public void getList() {
+        System.out.println(this.orderedItems);
+    }
 }

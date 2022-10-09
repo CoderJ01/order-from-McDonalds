@@ -26,5 +26,10 @@ public class Main {
         // add item
         customerA.addItem(itemA);
         customerA.addItem(itemB);
+
+        // space 
+        System.out.println(" ");
+
+        customerA.getList();
     }
 }
