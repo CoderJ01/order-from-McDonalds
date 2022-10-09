@@ -7,6 +7,7 @@ public class Customer {
     public Customer(String name, double balance) {
         this.name = name;
         if(balance < 0) {
+            // prohibit creation negative values
             this.balance = 0;
         }
         this.balance = balance;
