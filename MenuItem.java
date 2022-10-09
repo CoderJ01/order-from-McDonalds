@@ -7,8 +7,18 @@ public class MenuItem {
     // constructor
     public MenuItem(String item, double cost, int calorieAmount) {
         this.item = item;
-        this.cost = cost;
-        this.calorieAmount = calorieAmount;
+        if(cost < 0) {
+            this.cost = 0;
+        }
+        else {
+            this.cost = cost;
+        }
+        if(calorieAmount < 0) {
+            this.calorieAmount = 0;
+        }
+        else {
+            this.calorieAmount = calorieAmount;
+        }
     }
 
     // getters
