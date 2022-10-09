@@ -9,6 +9,9 @@ public class Main {
         customerA.addMoney(150);
         System.out.println("Balance: $" + customerA.getBalance());
 
+        // space 
+        System.out.println(" ");
+
         // test for menu item
         MenuItem itemA = new MenuItem("Big Mac", 3.99, 563);
         System.out.println("Name: " + itemA.getItem());
