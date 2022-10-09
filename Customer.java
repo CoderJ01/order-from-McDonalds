@@ -10,7 +10,9 @@ public class Customer {
             // prohibit creation negative values
             this.balance = 0;
         }
-        this.balance = balance;
+        else {
+            this.balance = balance;
+        }
     }
 
     // getters
