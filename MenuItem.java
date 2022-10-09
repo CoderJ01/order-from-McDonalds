@@ -8,4 +8,16 @@ public class MenuItem {
         this.cost = cost;
         this.calorieAmount = calorieAmount;
     }
+
+    public String getItem() {
+        return this.item;
+    }
+
+    public double getCost() {
+        return this.cost;
+    }
+
+    public int getCalories() {
+        return this.calorieAmount;
+    }
 }
