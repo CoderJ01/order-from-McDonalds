@@ -1,7 +1,11 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Customer {
     // variables
     private String name;
     private double balance;
+    private List<MenuItem> orderedItems = new ArrayList<>();
 
     // constructor
     public Customer(String name, double balance) {
