@@ -17,5 +17,8 @@ public class Main {
         System.out.println("Name: " + itemA.getItem());
         System.out.println("Cost: $" + itemA.getCost());
         System.out.println("Calories: " + itemA.getCalories()); 
+
+        // add item
+        customerA.addItem(itemA);
     }
 }
