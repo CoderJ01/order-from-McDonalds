@@ -32,4 +32,10 @@ public class Customer {
     public void addMoney(double amount) {
         this.balance += amount;
     }
+
+    // add items that the customer orders
+    public void addItem(MenuItem item) {
+        this.orderedItems.add(item);
+        System.out.println(item + " has been added to the customer's order list");
+    }
 }
