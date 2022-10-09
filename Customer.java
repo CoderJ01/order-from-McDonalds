@@ -56,4 +56,15 @@ public class Customer {
         System.out.println("Total price: " + cost);
         return cost;
     }
+
+    public void purchaseOrder() {
+        double costOfOrder = getTotalCost();
+        if(this.balance - costOfOrder < 0) {
+            System.out.println("Customer cannot afford this order");
+            this.balance = 0;
+        }
+        else {
+            System.out.println(this.balance - costOfOrder);
+        }
+    }
 }
