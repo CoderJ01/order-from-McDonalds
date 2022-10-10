@@ -34,12 +34,56 @@ public class Main {
         System.out.print("Enter your debit card balance: ");
         balance = input.nextDouble();
 
+        displayMenuChoices();
+
         System.out.print("What would you like to order: ");
         choice = input.nextInt();
+
+        // customer 
+        Customer customer = new Customer(name, balance);
+
+        // switch statement
+        switch(choice) {
+            case 0: 
+                System.out.println("Exit...");
+                break;
+            case 1: 
+                customer.addItem(hamburger);
+                break;
+            case 2:
+                customer.addItem(cheeseburger);
+                break;
+            case 3:
+                customer.addItem(doubleCheeseburger);
+                break;
+            case 4:
+                customer.addItem(QuarterPounder);
+                break;
+            case 5:
+                customer.addItem(BigMac);
+                break;
+            case 6: 
+                customer.addItem(smallFry);
+                break;
+            case 7:
+                customer.addItem(mediumFry);
+                break;
+            case 8: 
+                customer.addItem(largeFry);
+                break;
+            case 9: 
+                customer.addItem(cookies);
+                break;
+            case 10: 
+                customer.addItem(bakedApplePie);
+                break;
+            default:
+                System.out.print("Invalid option");
+        }
     }
 
-    private void displayMenuChoices() {
-        System.out.println("*****MENU*****");
+    private static void displayMenuChoices() {
+        System.out.println("*******MENU*******");
         
         // burgers
         System.out.println(" 1 - hamburger");
