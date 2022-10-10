@@ -19,6 +19,13 @@ public class Main {
         // desserts
         MenuItem cookies = new MenuItem("bag of cookies", 1.00, 510);
         MenuItem bakedApplePie = new MenuItem("apple pie", 0.99, 230);
+
+        // primative variables
+        int choice = 0;
+
+        // prompt user for input
+        System.out.println("What would you like to order");
+        choice = input.nextInt();
     }
 
     private void displayMenuChoices() {
