@@ -29,7 +29,7 @@ public class Main {
     }
 
     private void displayMenuChoices() {
-        System.out.println("MENU");
+        System.out.println("*****MENU*****");
         
         // burgers
         System.out.println(" 1 - hamburger");
