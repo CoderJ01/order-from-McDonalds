@@ -23,6 +23,7 @@ public class Main {
         // primative variables
         int choice = 0;
         double balance = 0.0;
+        boolean loop = false;
 
         // String variable
         String name;
@@ -31,8 +32,13 @@ public class Main {
         System.out.print("Hello, what is your name? ");
         name = input.next();
 
-        System.out.print("Enter your debit card balance: ");
-        balance = input.nextDouble();
+        do {
+            System.out.print("Enter your debit card balance: ");
+            balance = input.nextDouble();
+            if(balance < 0) 
+                System.out.println("Invalid input! Balance cannot be a negative number.");
+                loop = true;
+        }while(loop == true);
 
         displayMenuChoices();
 
