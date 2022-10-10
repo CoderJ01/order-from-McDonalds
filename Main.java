@@ -115,6 +115,7 @@ public class Main {
         } while (loop == true);
 
         customer.getList();
+        customer.getTotalCost();
     }
 
     private static void displayMenuChoices() {

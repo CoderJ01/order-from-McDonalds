@@ -53,6 +53,8 @@ public class Customer {
         for(int i = 0; i < this.orderedItems.size(); i++) {
             cost += this.orderedItems.get(i).getCost();
         }
+        System.out.println("**Total Cost**");
+        System.out.println("$" + cost);
         return cost;
     }
 
