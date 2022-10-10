@@ -12,9 +12,9 @@ public class Main {
         MenuItem hamburger = new MenuItem("hamburger", 1.00, 250);
 
         // fries
-        MenuItem smallFry = new MenuItem("Small Fry", 1.39, 230);
-        MenuItem mediumFry = new MenuItem("Medium Fry", 1.79, 320);
-        MenuItem largeFry = new MenuItem("Large Fries", 1.89, 480);
+        MenuItem smallFry = new MenuItem("small fry", 1.39, 230);
+        MenuItem mediumFry = new MenuItem("medium fry", 1.79, 320);
+        MenuItem largeFry = new MenuItem("large fry", 1.89, 480);
 
         // desserts
         MenuItem cookies = new MenuItem("bag of cookies", 1.00, 510);
@@ -118,10 +118,10 @@ public class Main {
         customer.getList();
 
         System.out.println("");
-        customer.getTotalCost();
+        customer.purchaseOrder();
 
         System.out.println("");
-        customer.purchaseOrder();
+        System.out.println("Have a nice day, " + customer.getName() + "!");
     }
 
     private static void displayMenuChoices() {

@@ -43,7 +43,7 @@ public class Customer {
     public void getList() {
         System.out.println("***Items Ordered***");
         for(int i = 0; i < this.orderedItems.size(); i++) {
-            System.out.println(this.orderedItems.get(i).getItem());
+            System.out.println((i + 1) + ". " + this.orderedItems.get(i).getItem());
         }
     }
 
@@ -63,13 +63,13 @@ public class Customer {
         double costOfOrder = getTotalCost();
         if(this.balance - costOfOrder < 0) {
             // Notify customer if balance is insufficient
-            System.out.println("\nCustomer cannot afford this order");
+            System.out.println("\nYou cannot afford this order");
             this.balance = 0;
         }
         else {
             // print remaining balance
             System.out.println("\n**Remaining Balanace**");
-            System.out.println(this.balance - costOfOrder);
+            System.out.println("$" + (this.balance - costOfOrder));
         }
     }
 }
