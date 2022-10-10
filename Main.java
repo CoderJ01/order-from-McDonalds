@@ -35,57 +35,86 @@ public class Main {
         do {
             System.out.print("Enter your debit card balance: ");
             balance = input.nextDouble();
-            if(balance < 0) 
+            if(balance < 0) {
                 System.out.println("Invalid input! Balance cannot be a negative number.");
                 loop = true;
-        }while(loop == true);
-
-        displayMenuChoices();
-
-        System.out.print("What would you like to order: ");
-        choice = input.nextInt();
+            }
+            else {
+                loop = false;
+            }
+        } while(loop == true);
 
         // customer 
         Customer customer = new Customer(name, balance);
 
-        // switch statement
-        switch(choice) {
-            case 0: 
+        displayMenuChoices();
+
+        do {
+            System.out.print("What would you like to order: ");
+            choice = input.nextInt();
+
+            // exit
+            if(choice == 0) {
                 System.out.println("Exit...");
-                break;
-            case 1: 
+                loop = false;
+            } 
+
+            // add burgers
+            else if (choice == 1) {
                 customer.addItem(hamburger);
-                break;
-            case 2:
+                loop = true;
+            }
+            else if (choice == 2) {
                 customer.addItem(cheeseburger);
-                break;
-            case 3:
+                loop = true;
+            }
+            else if (choice == 3) {
                 customer.addItem(doubleCheeseburger);
-                break;
-            case 4:
+                loop = true;
+            }
+            else if (choice == 4) {
                 customer.addItem(QuarterPounder);
-                break;
-            case 5:
+                loop = true;
+            }
+            else if (choice == 5) {
                 customer.addItem(BigMac);
-                break;
-            case 6: 
+                loop = true;
+            }
+
+            // add fries
+            else if (choice == 6) {
                 customer.addItem(smallFry);
-                break;
-            case 7:
+                loop = true;
+            }
+            else if (choice == 7) {
                 customer.addItem(mediumFry);
-                break;
-            case 8: 
+                loop = true;
+            }
+            else if (choice == 8) {
                 customer.addItem(largeFry);
-                break;
-            case 9: 
+                loop = true;
+            }
+
+            // add desserts
+            else if (choice == 9) {
                 customer.addItem(cookies);
-                break;
-            case 10: 
+                loop = true;
+            }
+            else if (choice == 10) {
                 customer.addItem(bakedApplePie);
-                break;
-            default:
-                System.out.print("Invalid option");
-        }
+                loop = true;
+            }
+
+            // invalid option
+            else {
+                System.out.println("Invalid option");
+                displayMenuChoices();
+                loop = true;
+            }
+            
+        } while (loop == true);
+
+        customer.getList();
     }
 
     private static void displayMenuChoices() {

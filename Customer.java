@@ -41,6 +41,7 @@ public class Customer {
 
     // retrieve all the items that the customer order
     public void getList() {
+        System.out.println("***Items Ordered***");
         for(int i = 0; i < this.orderedItems.size(); i++) {
             System.out.println(this.orderedItems.get(i).getItem());
         }
