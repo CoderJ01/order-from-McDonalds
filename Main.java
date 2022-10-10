@@ -20,4 +20,27 @@ public class Main {
         MenuItem cookies = new MenuItem("bag of cookies", 1.00, 510);
         MenuItem bakedApplePie = new MenuItem("apple pie", 0.99, 230);
     }
+
+    private void displayMenuChoices() {
+        System.out.println("MENU");
+        
+        // burgers
+        System.out.println(" 1 - hamburger");
+        System.out.println(" 2 - cheeseburger");
+        System.out.println(" 3 - doublecheeseburger");
+        System.out.println(" 4 - Quarter Pounder");
+        System.out.println(" 5 - Big Mac");
+
+        // fries
+        System.out.println(" 6 - small fry");
+        System.out.println(" 7 - medium fry");
+        System.out.println(" 8 - large fry");
+
+        // desserts
+        System.out.println(" 9 - bag of cookies");
+        System.out.println("10 - apple pie");
+
+        // exit
+        System.out.println(" 0 - exit program");
+    }
 }
