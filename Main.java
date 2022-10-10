@@ -114,8 +114,14 @@ public class Main {
             
         } while (loop == true);
 
+        System.out.println("");
         customer.getList();
+
+        System.out.println("");
         customer.getTotalCost();
+
+        System.out.println("");
+        customer.purchaseOrder();
     }
 
     private static void displayMenuChoices() {

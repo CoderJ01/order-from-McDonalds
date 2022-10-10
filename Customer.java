@@ -63,11 +63,12 @@ public class Customer {
         double costOfOrder = getTotalCost();
         if(this.balance - costOfOrder < 0) {
             // Notify customer if balance is insufficient
-            System.out.println("Customer cannot afford this order");
+            System.out.println("\nCustomer cannot afford this order");
             this.balance = 0;
         }
         else {
             // print remaining balance
+            System.out.println("\n**Remaining Balanace**");
             System.out.println(this.balance - costOfOrder);
         }
     }
