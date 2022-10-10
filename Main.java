@@ -107,19 +107,22 @@ public class Main {
 
             // invalid option
             else {
-                System.out.println("Invalid option");
+                System.out.println("Invalid option\n");
                 displayMenuChoices();
                 loop = true;
             }
             
         } while (loop == true);
 
+        // display list of ordered items
         System.out.println("");
         customer.getList();
 
+        // display the total cost
         System.out.println("");
         customer.purchaseOrder();
 
+        // say by to the customer
         System.out.println("");
         System.out.println("Have a nice day, " + customer.getName() + "!");
     }
