@@ -22,8 +22,18 @@ public class Main {
 
         // primative variables
         int choice = 0;
+        double balance = 0.0;
 
-        // prompt user for input
+        // String variable
+        String name;
+
+        // prompt user for inputs
+        System.out.print("Hello, what is your name? ");
+        name = input.next();
+
+        System.out.print("Enter your debit card balance: ");
+        balance = input.nextDouble();
+
         System.out.print("What would you like to order: ");
         choice = input.nextInt();
     }
