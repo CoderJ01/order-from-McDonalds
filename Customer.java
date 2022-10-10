@@ -54,7 +54,7 @@ public class Customer {
             cost += this.orderedItems.get(i).getCost();
         }
         System.out.println("**Total Cost**");
-        System.out.println("$" + cost);
+        System.out.println("$" + String.format("%.2f", cost));
         return cost;
     }
 
@@ -69,7 +69,7 @@ public class Customer {
         else {
             // print remaining balance
             System.out.println("\n**Remaining Balanace**");
-            System.out.println("$" + (this.balance - costOfOrder));
+            System.out.println("$" + String.format("%.2f", (this.balance - costOfOrder)));
         }
     }
 }
