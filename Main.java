@@ -24,7 +24,7 @@ public class Main {
         int choice = 0;
 
         // prompt user for input
-        System.out.println("What would you like to order");
+        System.out.print("What would you like to order: ");
         choice = input.nextInt();
     }
 
