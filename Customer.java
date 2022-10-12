@@ -42,8 +42,10 @@ public class Customer {
     // retrieve all the items that the customer order
     public void getList() {
         System.out.println("***Items Ordered***");
-        for(int i = 0; i < this.orderedItems.size(); i++) {
-            System.out.println((i + 1) + ". " + this.orderedItems.get(i).getItem());
+        int i = 1;
+        for(MenuItem item : orderedItems) {
+            System.out.println(i + ". " + item.getItem() + ": $" + String.format("%.2f", item.getCost()));
+            i++;
         }
     }
 
