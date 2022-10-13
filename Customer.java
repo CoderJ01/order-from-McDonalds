@@ -30,6 +30,9 @@ public class Customer {
 
     // add money to bank account
     public void addMoney(double amount) {
+        if(amount < 0) {
+            amount = 0;
+        }
         this.balance += amount;
     }
 
