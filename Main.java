@@ -56,6 +56,23 @@ public class Main {
         do {
             System.out.print("What would you like to order: ");
             choice = input.nextInt();
+            // if user choses 0, exit the program
+            if(choice == 0) {
+                System.out.println("Exit...");
+                loop = false;
+            }
+            // loop through options
+            for(int i = 1; i < items.size(); i++) {
+                if(choice == i) {
+                    customer.addItem(items.get(i));
+                    loop = true;
+                }
+            }
+            // display menu
+            if(choice == 90) {
+                displayMenuChoices();
+                loop = true;
+            }
         } while (loop == true);
 
         // display list of ordered items
