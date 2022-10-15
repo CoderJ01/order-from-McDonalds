@@ -7,6 +7,9 @@ public class Main {
     private static Scanner input = new Scanner(System.in);
     private static List<MenuItem> items = new ArrayList<>(); // hold array of menu items
     public static void main(String[] args) {
+
+        // exit program, selection choice 0
+        items.add(new MenuItem());
         
         // burgers
         items.add(new MenuItem("hamburger", 1.00, 300));
@@ -57,21 +60,25 @@ public class Main {
             System.out.print("What would you like to order: ");
             choice = input.nextInt();
             // loop through options
-            for(int i = 0; i < items.size(); i++) {
+            for(int i = 1; i < items.size(); i++) {
                 if(choice == i) {
                     customer.addItem(items.get(i));
                     loop = true;
                 }
             }
+             // if user choses 0, exit the program
+            if(choice == 0) {
+                System.out.println("Exit...");
+                loop = false;
+            }
             // display menu
-            if(choice == 90) {
+            else if(choice == 100) {
                 displayMenuChoices();
                 loop = true;
             }
-            // if user choses 0, exit the program
-            else if(choice == 95) {
-                System.out.println("Exit...");
-                loop = false;
+            // notify customer that choice is invalid
+            else {
+                loop = true;
             }
         } while (loop == true);
 
@@ -95,8 +102,6 @@ public class Main {
             System.out.println((i) + " - " + items.get(i).getItem());
         }
         // option to display menu again
-        System.out.println("90 - display menue items again");
-        // exit
-        System.out.println("95 - exit program");
+        System.out.println("100 - display menue items again");
     }
 }

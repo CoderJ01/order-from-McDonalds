@@ -21,6 +21,11 @@ public class MenuItem {
         }
     }
 
+    // use non-parameter constrcutor to display "Exit program" selection
+    public MenuItem() {
+        this.item = "Exit program";
+    }
+
     // getters
     public String getItem() {
         return this.item;
