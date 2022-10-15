@@ -57,7 +57,7 @@ public class Main {
         displayMenuChoices();
 
         do {
-            System.out.print("What would you like to order: ");
+            System.out.print("\nWhat would you like to order: ");
             choice = input.nextInt();
             // loop through options
             for(int i = 1; i < items.size(); i++) {
