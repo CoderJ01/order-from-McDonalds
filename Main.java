@@ -6,6 +6,7 @@ public class Main {
 
     private static Scanner input = new Scanner(System.in);
     private static List<MenuItem> items = new ArrayList<>(); // hold array of menu items
+    
     public static void main(String[] args) {
 
         // exit program, selection choice 0
