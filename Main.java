@@ -56,15 +56,10 @@ public class Main {
         do {
             System.out.print("What would you like to order: ");
             choice = input.nextInt();
-            // if user choses 0, exit the program
-            if(choice == 95) {
-                System.out.println("Exit...");
-                loop = false;
-            }
             // loop through options
             for(int i = 0; i < items.size(); i++) {
                 if(choice == i) {
-                    customer.addItem(items.get(i - 1));
+                    customer.addItem(items.get(i));
                     loop = true;
                 }
             }
@@ -72,6 +67,11 @@ public class Main {
             if(choice == 90) {
                 displayMenuChoices();
                 loop = true;
+            }
+            // if user choses 0, exit the program
+            else if(choice == 95) {
+                System.out.println("Exit...");
+                loop = false;
             }
         } while (loop == true);
 
@@ -92,7 +92,7 @@ public class Main {
         System.out.println("*******MENU*******");
         // display menue items
         for(int i = 0; i < items.size(); i++) {
-            System.out.println((i + 1) + " - " + items.get(i).getItem());
+            System.out.println((i) + " - " + items.get(i).getItem());
         }
         // option to display menu again
         System.out.println("90 - display menue items again");
