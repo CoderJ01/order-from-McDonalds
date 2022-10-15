@@ -98,10 +98,12 @@ public class Main {
     private static void displayMenuChoices() {
         System.out.println("*******MENU*******");
         // display menue items
-        for(int i = 0; i < items.size(); i++) {
+        for(int i = 1; i < items.size(); i++) {
             System.out.println((i) + " - " + items.get(i).getItem());
         }
         // option to display menu again
         System.out.println("100 - display menue items again");
+        // option to display menu again
+        System.out.println("0 - Exit the program");
     }
 }
