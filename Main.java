@@ -90,8 +90,13 @@ public class Main {
 
     private static void displayMenuChoices() {
         System.out.println("*******MENU*******");
-        
+        // display menue items
+        for(int i = 1; i < items.size(); i++) {
+            System.out.println(i + " - " + items.get(i).getItem());
+        }
         // exit
-        System.out.println(" 0 - exit program");
+        System.out.println("0 - exit program");
+        // option to display menu again
+        System.out.println("90 - display menue items again");
     }
 }
