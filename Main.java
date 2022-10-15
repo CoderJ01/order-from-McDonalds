@@ -56,19 +56,6 @@ public class Main {
         do {
             System.out.print("What would you like to order: ");
             choice = input.nextInt();
-
-            // exit
-            if(choice == 0) {
-                System.out.println("Exit...");
-                loop = false;
-            } 
-            // invalid option
-            else {
-                System.out.println("Invalid option\n");
-                displayMenuChoices();
-                loop = true;
-            }
-            
         } while (loop == true);
 
         // display list of ordered items
