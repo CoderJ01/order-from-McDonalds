@@ -21,7 +21,7 @@ public class MenuItem {
         }
     }
 
-    // use non-parameter constrcutor to display "Exit program" selection
+    // use non-parameter constructor to display "Exit program" selection
     public MenuItem() {
         this.item = "Exit program";
     }
