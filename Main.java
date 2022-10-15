@@ -12,7 +12,7 @@ public class Main {
         MenuItem QuarterPounder = new MenuItem("Quarter Pounder", 3.79, 520);
         MenuItem doubleCheeseburger = new MenuItem("Double Cheeseburger", 1.69, 450);
         MenuItem cheeseburger = new MenuItem("cheeseburger", 1.00, 300);
-        MenuItem hamburger = new MenuItem("hamburger", 1.00, 250);
+        MenuItem hamburger = new MenuItem("cheeseburger", 1.00, 300);
 
         // fries
         MenuItem smallFry = new MenuItem("small fry", 1.39, 230);
@@ -22,6 +22,22 @@ public class Main {
         // desserts
         MenuItem cookies = new MenuItem("bag of cookies", 1.00, 510);
         MenuItem bakedApplePie = new MenuItem("apple pie", 0.99, 230);
+
+        // burgers
+        items.add(new MenuItem("hamburger", 1.00, 300));
+        items.add(new MenuItem("cheeseburger", 1.00, 300));
+        items.add(new MenuItem("double cheeseburger", 1.69, 450));
+        items.add(new MenuItem("Big Mac", 3.99, 563));
+        items.add(new MenuItem("Quarter Pounder", 3.79, 520));
+     
+        // fries
+        items.add(new MenuItem("small fry", 1.39, 230));
+        items.add(new MenuItem("medium fry", 1.79, 320));
+        items.add(new MenuItem("large fry", 1.89, 480));
+
+        // deserts
+        items.add(new MenuItem("bag of cookies", 1.00, 510));
+        items.add(new MenuItem("apple pie", 0.99, 230));
 
         // primative variables
         int choice = 0;
