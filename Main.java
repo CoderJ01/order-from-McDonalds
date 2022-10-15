@@ -62,53 +62,6 @@ public class Main {
                 System.out.println("Exit...");
                 loop = false;
             } 
-
-            // add burgers
-            else if (choice == 1) {
-                customer.addItem(hamburger);
-                loop = true;
-            }
-            else if (choice == 2) {
-                customer.addItem(cheeseburger);
-                loop = true;
-            }
-            else if (choice == 3) {
-                customer.addItem(doubleCheeseburger);
-                loop = true;
-            }
-            else if (choice == 4) {
-                customer.addItem(QuarterPounder);
-                loop = true;
-            }
-            else if (choice == 5) {
-                customer.addItem(BigMac);
-                loop = true;
-            }
-
-            // add fries
-            else if (choice == 6) {
-                customer.addItem(smallFry);
-                loop = true;
-            }
-            else if (choice == 7) {
-                customer.addItem(mediumFry);
-                loop = true;
-            }
-            else if (choice == 8) {
-                customer.addItem(largeFry);
-                loop = true;
-            }
-
-            // add desserts
-            else if (choice == 9) {
-                customer.addItem(cookies);
-                loop = true;
-            }
-            else if (choice == 10) {
-                customer.addItem(bakedApplePie);
-                loop = true;
-            }
-
             // invalid option
             else {
                 System.out.println("Invalid option\n");
