@@ -57,14 +57,14 @@ public class Main {
             System.out.print("What would you like to order: ");
             choice = input.nextInt();
             // if user choses 0, exit the program
-            if(choice == 0) {
+            if(choice == 95) {
                 System.out.println("Exit...");
                 loop = false;
             }
             // loop through options
-            for(int i = 1; i < items.size(); i++) {
+            for(int i = 0; i < items.size(); i++) {
                 if(choice == i) {
-                    customer.addItem(items.get(i));
+                    customer.addItem(items.get(i - 1));
                     loop = true;
                 }
             }
@@ -91,12 +91,12 @@ public class Main {
     private static void displayMenuChoices() {
         System.out.println("*******MENU*******");
         // display menue items
-        for(int i = 1; i < items.size(); i++) {
-            System.out.println(i + " - " + items.get(i).getItem());
+        for(int i = 0; i < items.size(); i++) {
+            System.out.println((i + 1) + " - " + items.get(i).getItem());
         }
-        // exit
-        System.out.println("0 - exit program");
         // option to display menu again
         System.out.println("90 - display menue items again");
+        // exit
+        System.out.println("95 - exit program");
     }
 }
