@@ -76,7 +76,6 @@ public class Main {
                 displayMenuChoices();
                 loop = true;
             }
-            // notify customer that choice is invalid
             else {
                 loop = true;
             }
