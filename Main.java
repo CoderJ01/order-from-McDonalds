@@ -6,7 +6,7 @@ public class Main {
 
     private static Scanner input = new Scanner(System.in);
     private static List<MenuItem> items = new ArrayList<>(); // hold array of menu items
-    
+
     public static void main(String[] args) {
 
         // exit program, selection choice 0
@@ -90,7 +90,7 @@ public class Main {
         System.out.println("");
         customer.purchaseOrder();
 
-        // say by to the customer
+        // say bye to the customer
         System.out.println("");
         System.out.println("Have a nice day, " + customer.getName() + "!");
     }
