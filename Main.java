@@ -23,7 +23,7 @@ public class Main {
         items.add(new MenuItem("medium fry", 1.79, 320));
         items.add(new MenuItem("large fry", 1.89, 480));
 
-        // deserts
+        // desserts
         items.add(new MenuItem("bag of cookies", 1.00, 510));
         items.add(new MenuItem("apple pie", 0.99, 230));
 
