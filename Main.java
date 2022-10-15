@@ -102,7 +102,7 @@ public class Main {
             System.out.println((i) + " - " + items.get(i).getItem());
         }
         // option to display menu again
-        System.out.println("100 - display menue items again");
+        System.out.println("100 - display menu items again");
         // option to display menu again
         System.out.println("0 - Exit the program");
     }
