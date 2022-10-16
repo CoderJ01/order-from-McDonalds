@@ -28,7 +28,7 @@ public class Main {
         items.add(new MenuItem("bag of cookies", 1.00, 510));
         items.add(new MenuItem("apple pie", 0.99, 230));
 
-        // primative variables
+        // primitive variables
         int choice = 0;
         double balance = 0.0;
         boolean loop = false;
