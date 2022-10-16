@@ -67,7 +67,7 @@ public class Main {
                     loop = true;
                 }
             }
-             // if user choses 0, exit the program
+             // if user selects 0, exit the program
             if(choice == 0) {
                 System.out.println("Exit...");
                 loop = false;
@@ -97,7 +97,7 @@ public class Main {
 
     private static void displayMenuChoices() {
         System.out.println("*******MENU*******");
-        // display menue items
+        // display menu items
         for(int i = 1; i < items.size(); i++) {
             System.out.println((i) + " - " + items.get(i).getItem());
         }
