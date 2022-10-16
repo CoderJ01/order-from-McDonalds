@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
+    private static int displayMenu = 100;
     private static Scanner input = new Scanner(System.in);
     private static List<MenuItem> items = new ArrayList<>(); // hold array of menu items
 
@@ -73,7 +74,7 @@ public class Main {
                 loop = false;
             }
             // display menu
-            else if(choice == 100) {
+            else if(choice == displayMenu) {
                 displayMenuChoices();
                 loop = true;
             }
@@ -102,7 +103,7 @@ public class Main {
             System.out.println((i) + " - " + items.get(i).getItem());
         }
         // option to display menu again
-        System.out.println("100 - display menu items again");
+        System.out.println(displayMenu + " - display menu items again");
         // option to exit program
         System.out.println("0 - Exit the program");
     }
