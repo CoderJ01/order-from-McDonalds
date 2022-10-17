@@ -39,7 +39,7 @@ public class Customer {
     // add items that the customer orders
     public void addItem(MenuItem item) {
         this.orderedItems.add(item);
-        System.out.println(item.getItem() + " has been added to the customer's order list");
+        System.out.println(item.getItem() + " has been added to your order");
     }
 
     // retrieve all the items that the customer order
