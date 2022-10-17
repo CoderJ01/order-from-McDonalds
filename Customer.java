@@ -73,7 +73,7 @@ public class Customer {
         }
         else {
             // print remaining balance
-            System.out.println("\n**Remaining Balanace**");
+            System.out.println("\n**Remaining Balance**");
             System.out.println("$" + String.format("%.2f", (this.balance - costOfOrder)));
         }
     }
