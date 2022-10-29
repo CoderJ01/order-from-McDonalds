@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
-    // variables
+    // fields
     private String name;
     private double balance;
     private List<MenuItem> orderedItems = new ArrayList<>();

@@ -1,5 +1,5 @@
 public class MenuItem {
-    // variables
+    // fields
     private String item;
     private double cost;
     private int calorieAmount;

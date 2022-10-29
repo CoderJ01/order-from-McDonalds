@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
+    // fields
     private static int displayMenu = 100;
     private static Scanner input = new Scanner(System.in);
     private static List<MenuItem> items = new ArrayList<>(); // hold array of menu items
